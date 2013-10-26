@@ -11,17 +11,14 @@ NAME = "mozfest"
 TITLE = "MozFest 2013 quotes"
 
 # Google spreadsheet key
-#SPREADSHEET_KEY = "None"
+SPREADSHEET_KEY = "0Ak3IIavLYTovdGFvUGZzTThya05jZTdKNzNTRUdzY3c"
 
-# Create JSON data at ./data.json, disabled by default
-# CREATE_JSON = True
 
 # S3 bucket configuration
 S3_BUCKETS = {
     # Provide target -> s3 url pairs, such as:
-    # "mytarget": "s3://mys3url.bucket.url/some/path"
-    "staging": "s3://projects.beta.coolorg.net/mozfest/",
-    "production": "s3://projects.coolorg.net/mozfest/",
+    "staging": "s3://mozfest.recoveredfactory.net/",
+    "production": "s3://mozfest.recoveredfactory.net/",
 }
 
 # Repository this project is based on (used for updates)

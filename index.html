@@ -1,0 +1,22 @@
+{% extends "_base.html" %}
+
+{% block preview %}{% endblock %}
+
+{% block content %}
+<div class="container">
+  {% for row in Form_Responses_1 %}
+    <div class="quote-wrapper">
+      <p class="quote">{{ row.What_is_this_nugget_of_brilliance }}</p>
+      <p class="attribution">&mdash; {{ row.Who_said_it }}</p>
+      <p class="submitted">Submitted by {{ row.Who_are_you }}</p>
+    </div>
+  {% endfor %}
+
+</div>
+{% endblock content %}
+
+{% block css %}
+{{ super() }} {# Calls base css block to include Bootstrap and base css #}
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+{% endblock css %}
+
